@@ -58,7 +58,7 @@ Route::middleware(['kadiv'])->group(function () {
 Route::middleware(['publicpeople'])->group(function () {
 	Route::get('userspeople', 'HomeController@userpeople')->name('userpeople');
 });
-// Route::get('pagenotfound', ['as' => 'notfound', 'uses' => 'HomeController@pagenotfound']);
+Route::get('pagenotfound', ['as' => 'notfound', 'uses' => 'HomeController@pagenotfound']);
 Route::post('/', 'HomeController@contactme')->name('contactme');
 
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout');

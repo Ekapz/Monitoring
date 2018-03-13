@@ -92,11 +92,11 @@ class HomeController extends Controller
         return redirect('/');
     }
 
-    // ----------------URL REDIRECT TO ERROR404------------
-    //  public function pagenotfound()
-    //  {
-    //      return view('503');
-    // }
+   // ----------------URL REDIRECT TO ERROR404------------
+     public function pagenotfound()
+     {
+         return view('503');
+    }
 
     public function alluser(){
         $data['user'] = User::paginate('4');

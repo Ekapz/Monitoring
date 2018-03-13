@@ -1,7 +1,7 @@
                 <!DOCTYPE html>
                 <html>
                 <head>
-                    <title>INI LOGIN TOD</title>
+                    <title>Login Page   </title>
                 </head>
                 <style type="text/css" linkrell="stylesheet">
                         /* ------------------------------------ Click on login and Sign Up to  changue and view the effect
