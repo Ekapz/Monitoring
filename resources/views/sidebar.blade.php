@@ -283,7 +283,6 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="{{url('alluser')}}"><i class="fa fa-tv"></i> Lihat User</a></li>
-            <li><a href="{{url('adduser')}}"><i class="fa fa-user-plus"></i> Tambah User</a></li>
           </ul>
         </li>
         <li><a href="https://adminlte.io/docs"><i class="fa fa-book"></i> <span>Documentation</span></a></li>

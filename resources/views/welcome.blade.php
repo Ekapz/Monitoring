@@ -4,7 +4,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
 -->
 <html lang="en">
 <head>
-   
+ 
 
     <title>Monitoring Divisi Umum</title>
 
@@ -29,7 +29,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                         <span class="icon-bar"></span>
                     </button>
                     <ul class="nav navbar-nav">
-                        <li style="font-size: 21px;" class="active"><a href="#home" class="smoothScroll"><b>Inventory'10</b></a></li>
+                        <li style="font-size: 21px;" class="active"><a href="#home" class="smoothScroll"><b>DivSum</b></a></li>
                     </ul>
                 </div>
                 <div class="navbar-collapse collapse">
@@ -41,7 +41,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                         <li style="margin-left: 610px;" ><a href=" {{ url('/login')}}">Masuk</a></li>
                         @else
                         <li style="margin-left: 498px;" class="dropdown right">
-                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                             {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu" role="menu" style="width: 10px; height: 65px;">
@@ -62,8 +62,8 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                 <div class="row centered">
                     <div class="col-lg-12">
                         <h1>Monitoring <b> <a href="http://sucofindo.co.id/">Divisi Umum</a></b></h1><br>
-                        <h3> Jakarta Selatan, <a href="http://sucofindo.co.id/">PT Sucofindo(Persero)<br></a>
-                            Mudah, Cepat, dan Simple:)
+                        <h3> Jakarta Selatan, <a href="http://sucofindo.co.id/">PT Sucofindo (Persero)<br></a>
+                            Mudah, Cepat, dan Simple
                             <h3><a style="margin-right: 55px;" href="{{ url('/login') }}" class="btn btn-lg btn-success">Kuy Gabung !</a></h3>
                         </div>
                         <div class="col-lg-2">
@@ -76,7 +76,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                             
                         </div>
                     </div>
-                    <center><h2><a href="http://sucofindo.co.id">Sucofindo-</a></h2></center><br>
+                    <center><h2><a href="http://sucofindo.co.id">-Sucofindo-</a></h2></center><br>
                 </div> <!--/ .container -->
             </div><!--/ #headerwrap -->
         </section>
@@ -118,20 +118,20 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
             <div class="col-lg-5">
                 <h3>Alamat</h3>
                 <p>
-                   <b>PT Sucofindo(Persero)</b><br/>
-                   Jl. Raya Pasar Minggu No.44, RT.2/RW.7 <br/>
-                   Duren Tiga, Pancoran  Jakarta Selatan <br/>
-                   Daerah Khusus Ibukota Jakarta 12760,<br/> 
-                   Indonesia.
-               </p>
-           </div>
+                 <b>PT Sucofindo(Persero)</b><br/>
+                 Jl. Raya Pasar Minggu No.44, RT.2/RW.7 <br/>
+                 Duren Tiga, Pancoran  Jakarta Selatan <br/>
+                 Daerah Khusus Ibukota Jakarta 12760,<br/> 
+                 Indonesia.
+             </p>
+         </div>
 
-           <div class="col-lg-7">
-            <h3>Kiriman Masukan/Saran untuk Web ini:)</h3>
+         <div class="col-lg-7">
+            <h3>Kiriman Masukan / Saran untuk Web ini </h3>
             <br>
             <form method="POST" action=" {{route('contactme')}} " >
-               {!! csrf_field() !!}
-               <div class="form-group">
+             {!! csrf_field() !!}
+             <div class="form-group">
                 <label for="name1">Nama</label>
                 <input type="name" name="name" class="form-control" id="name1" placeholder="Nama Lengkap" required>
             </div>
@@ -147,9 +147,9 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                 <label>Message</label>
                 <textarea class="form-control" placeholder="Message" name="message" rows="3" required></textarea>
             </div>
-      <button style="padding-right:30px; font-size:15px;" type="submit" class="btn btn-large btn-success">Kirim</button>
-  </form>
-</div>
+            <button style="padding-right:15px; font-size:15px;" type="submit" class="btn btn-large btn-success">Kirim</button>
+        </form>
+    </div>
 </div>
 </div>
 </section>

@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="{{asset('css/select2.min.css')}}">
 <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap-datepicker.min.css')}}">
 <body class="hold-transition skin-blue sidebar-mini" background="github.png">
-  <div class="content-wrapper">
+  <div class="content-wrapper" >
     <div class="container-fluid spark-screen">
       <div class="row"><br>
         <div class="col-md-12">
@@ -55,11 +55,11 @@
                     <div class="input-group-addon">
                       <i class="fa fa-calendar"></i>
                     </div>
-                  <input type="date" name="tglregisumum" value="{{ date($ppbjassignmentEdit->tgl_regis_umum) }}" class="form-control" id="inputPassword3" placeholder="Tgl. Regis Umum" disabled="disabled">
+                  <input type="date" name="tglregisumum" style="width: 140px" value="{{ date($ppbjassignmentEdit->tgl_regis_umum) }}" class="form-control" id="inputPassword3" placeholder="Tgl. Regis Umum" disabled="disabled">
                 </div>
                 </div>
                 <label class="col-sm-2 control-label">Tgl. Permintaan Ppbj</label>
-                <div class="col-sm-2">
+                <div class="col-sm-3">
                   <div class="input-group text">
                     <div class="input-group-addon">
                       <i class="fa fa-calendar"></i>
@@ -67,7 +67,9 @@
                   <input type="date" name="tglpermintaanppbj" value="{{ date($ppbjassignmentEdit->tgl_permintaan_ppbj) }}" class="form-control" id="inputPassword3" placeholder="Tgl Permintaan Ppbj" disabled="disabled">
                 </div>
                 </div>
-                <label class="col-sm-1 control-label">Tgl. Dibutuhkan</label>
+              </div>
+              <div class="form-group">
+              <label class="col-sm-2 control-label">Tgl. Dibutuhkan</label>
                 <div class="col-sm-2">
                   <div class="input-group text">
                     <div class="input-group-addon">
@@ -76,8 +78,6 @@
                   <input type="date" name="tgldibutuhkanppbj" value="{{ date($ppbjassignmentEdit->tgl_dibutuhkan_ppbj) }}" class="form-control" id="inputPassword3" placeholder="Tgl Dibutuhkan center" disabled="disabled">
                 </div>
                 </div>
-              </div>
-              <div class="form-group">
                 <label class="col-sm-2 control-label">Jenis Pengadaan</label>
                 <div class="col-sm-3">
                   <div class="input-group text">
@@ -93,6 +93,8 @@
                   </select>
                   </div>                   
                 </div>
+            </div>
+            <div class="form-group">
                 <label class="col-sm-2 control-label">Unit Kerja</label>
                 <div class="col-sm-3">
                   <div class="input-group text">

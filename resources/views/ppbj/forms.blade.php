@@ -30,7 +30,8 @@
                 <div class="col-sm-3">
                   <div class="input-group text">
                     <div class="input-group-addon">
-                      <i class="fa fa-apple"></i>
+                      <i class="fa fa-list-ol"></i>
+
                     </div>
                     <input type="text" name="kodePj" value="{{$ppbjadd->kodePj or ''}}" class="form-control" placeholder="Kode PJ" required autofocus>
                   </div>
@@ -59,7 +60,7 @@
                 <div class="col-sm-3">
                   <div class="input-group text">
                     <div class="input-group-addon">
-                      <i class="fa fa-apple"></i>
+                      <i class="fa fa-list-ol"></i>
                     </div>
                     <input type="text" name="noppbj" value="{{$ppbjadd->no_ppbj or ''}}" class="form-control" id="inputPassword3" placeholder="No. Ppbj" required autofocus>
                   </div>
@@ -88,23 +89,34 @@
               <div class="form-group">
                 <label class="col-sm-2 control-label">Jenis Pengadaan</label>
                 <div class="col-sm-3">
-                  <select name="jenispengadaan" class="form-control select2" style="width:100%;" tabindex="-1" aria-hidden="true">
-                    @foreach($pengadaan as $key)
-                    <option selected value="{{$key->id_pengadaan}}">
-                      {{$key->namapengadaan}}
-                    </option>
-                    @endforeach
-                  </select>                      
+                  <div class="input-group date">
+                    <div class="input-group-addon">
+                    <i class="fa fa-briefcase"></i>
+                    </div>
+                    <select name="jenispengadaan" class="form-control select2" style="width:100%;" tabindex="-1" aria-hidden="true">
+                      @foreach($pengadaan as $key)
+                      <option selected value="{{$key->id_pengadaan}}">
+                        {{$key->namapengadaan}}
+                      </option>
+                      @endforeach
+                    </select>  
+                  </div>                    
                 </div>
                 <label class="col-sm-2 control-label">Unit Kerja</label>
                 <div class="col-sm-3">
-                  <select name="id_unit" class="form-control select2" style="width:100%;" tabindex="-1" aria-hidden="true">
-                    @foreach($unitkerja as $key)
-                    <option selected value="{{$key->id_unit}}">
-                      {{$key->aa}}
-                    </option>
-                    @endforeach
-                  </select>                      
+                  <div class="input-group date">
+                    <div class="input-group-addon">
+                      <i class="fa fa-globe"></i>
+                    </div>
+
+                    <select name="id_unit" class="form-control select2" style="width:100%;" tabindex="-1" aria-hidden="true">
+                      @foreach($unitkerja as $key)
+                      <option selected value="{{$key->id_unit}}">
+                        {{$key->aa}}
+                      </option>
+                      @endforeach
+                    </select>  
+                  </div>                   
                 </div>
               </div>
               <div class="form-group">
@@ -112,9 +124,10 @@
                 <div class="col-sm-3">
                   <div class="input-group text">
                     <div class="input-group-addon">
-                      <i class="fa fa-apple"></i>
+                      <i class="fa fa-cart-plus"></i>
+
                     </div>
-                    <input type="text" name="row" class="form-control" placeholder="Masukan angka..." value="" required autofocus>
+                    <input type="number" name="row" class="form-control" placeholder="Masukan angka..." value="" required autofocus>
                   </div>
                 </div>
                 <div class="row">
@@ -145,7 +158,7 @@
                         var row = $('input[name="row"]').val();
                         var tag = '';
                         for(i=1;i<=row;i++){
-                          tag += '<tr><td><input type="text" name="nama[]" class="form-control" placeholder="Nama Barang/Jasa"></td><td><input type="text" name="qty[]" placeholder="Jumlah Barang/Jasa" class="form-control qty qty'+i+'"></td><td><input type="text" name="harga[]" placeholder="Harga Satuan" id="amount"  class="form-control input-sm text-right amount harga harga'+i+'"></td><td><input type="text" name="total[]" placeholder="Total Harga"  class="form-control input-sm text-right amount total total'+i+'" readonly></td></tr>'; 
+                          tag += '<tr><td><input type="text" name="nama[]" class="form-control" placeholder="Nama Barang/Jasa"></td><td><input type="number" name="qty[]" placeholder="Jumlah Barang/Jasa" class="form-control qty qty'+i+'"></td><td><input type="number" name="harga[]" placeholder="Harga Satuan" id="amount"  class="form-control input-sm text-right amount harga harga'+i+'"></td><td><input type="text" name="total[]" placeholder="Total Harga"  class="form-control input-sm text-right amount total total'+i+'" readonly></td></tr>'; 
                         }
                         $('tbody').html( tag );
                         subtotal();
@@ -218,4 +231,5 @@
           });
         </script>
       </body>
+
       </html>

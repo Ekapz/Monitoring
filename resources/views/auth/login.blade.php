@@ -374,7 +374,7 @@
                                                                         <h2>SIGN UP</h2>
 
 
-                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                                        <p>Register untuk membuat Akun   s</p>
 
                                                                         <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
                                                                     </div>
@@ -384,13 +384,13 @@
 
                                                             <div class="cont_back_info">
                                                                 <div class="cont_img_back_grey">
-                                                                    <img src="https://images.unsplash.com/42/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg?ixlib=rb-0.3.5&q=50&fm=jpg&crop=entropy&s=7686972873678f32efaf2cd79671673d" alt="" />
+                                                                    <img src="{{ asset('/img/login.jpg') }}" alt="" />
                                                                 </div>
 
                                                             </div>
                                                             <div class="cont_forms" >
                                                                 <div class="cont_img_back_">
-                                                                    <img src="https://images.unsplash.com/42/U7Fc1sy5SCUDIu4tlJY3_NY_by_PhilippHenzler_philmotion.de.jpg?ixlib=rb-0.3.5&q=50&fm=jpg&crop=entropy&s=7686972873678f32efaf2cd79671673d" alt="" />
+                                                                    <img src="{{ asset('/img/login.jpg') }}" alt="" />
                                                                 </div>
                                                                 <form class="form-horizontal" method="POST" action="{{ route('login') }}">
                                                                            {{ csrf_field() }}
